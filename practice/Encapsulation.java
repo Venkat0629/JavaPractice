@@ -33,9 +33,15 @@ public class Encapsulation {
     public static void main(String[] args) throws Exception {
         User user = new User();
         user.setId(100);
-        user.setGender("");
-        user.setName("");
+        user.setGender("Venkat");
+        user.setName("Male");
         System.out.println(user);
+
+        User testUser = new User();
+        testUser.setId(-100);
+        testUser.setGender("");
+        testUser.setName("");
+        System.out.println(testUser);
     }
 
 
