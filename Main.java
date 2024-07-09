@@ -16,28 +16,28 @@ public class Main {
 
     }
 
-    public static void TreeMap() {
+    private static void TreeMap() {
         Map<Employee, Double> data = Employee.loadData("TreeMap");
         System.out.println(data);
         Double salary = data.get(new Employee(103, "Harsha", 25));
         System.out.println("Harsha=> " + salary);
     }
 
-    public static void HashMap() {
+    private static void HashMap() {
         Map<Employee, Double> data = Employee.loadData("HashMap");
         System.out.println(data);
         Double salary = data.get(new Employee(105, "Venkat", 24));
         System.out.println("Venkat=> " + salary);
     }
 
-    public static void LinkedHashMap() {
+    private static void LinkedHashMap() {
         Map<Employee, Double> data = Employee.loadData("LinkedHashMap");
         System.out.println(data);
         Double salary = data.get(new Employee(104, "Naveen", 27));
         System.out.println("Naveen=> " + salary);
     }
 
-    public static void ConcurrentHashMap() throws InterruptedException {
+    private static void ConcurrentHashMap() throws InterruptedException {
         Map<String, AtomicLong> data = new ConcurrentHashMap<>();
         data.put("Chicken Biryani", new AtomicLong());
         data.put("Mutton Biryani", new AtomicLong());
