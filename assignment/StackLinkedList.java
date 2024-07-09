@@ -1,3 +1,4 @@
+package assignment;
 
 class Node {
     int data;
@@ -26,7 +27,7 @@ class Stack {
     // Method to remove and return the top element from stack
     public int pop() {
         if (isEmpty()) {
-            System.out.println("Stack is empty, cannot pop");
+            System.out.println("assignment.Stack is empty, cannot pop");
             return Integer.MIN_VALUE;
         }
         int popped = this.top.data;
@@ -37,7 +38,7 @@ class Stack {
     // Method to return the top element of the stack
     public int peek() {
         if (isEmpty()) {
-            System.out.println("Stack is empty, cannot peek");
+            System.out.println("assignment.Stack is empty, cannot peek");
             return Integer.MIN_VALUE;
         }
         return this.top.data;
@@ -52,11 +53,11 @@ class Stack {
     public void display() {
         Node current = this.top;
         if (current == null) {
-            System.out.println("Stack is empty");
+            System.out.println("assignment.Stack is empty");
             return;
         }
 
-        System.out.print("Stack: ");
+        System.out.print("assignment.Stack: ");
         while (current != null) {
             System.out.print(current.data + " ");
             current = current.next;
@@ -73,11 +74,11 @@ public class StackLinkedList {
         stack.push(20);
         stack.push(30);
 
-        stack.display(); // Output: Stack: 30 20 10
+        stack.display(); // Output: assignment.Stack: 30 20 10
 
         System.out.println("Popped element: " + stack.pop()); // Output: Popped element: 30
         System.out.println("Top element: " + stack.peek());   // Output: Top element: 20
 
-        stack.display(); // Output: Stack: 20 10
+        stack.display(); // Output: assignment.Stack: 20 10
     }
 }

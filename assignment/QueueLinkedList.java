@@ -1,4 +1,4 @@
-//class Node {
+package assignment;//class Node {
 //    int data;
 //    Node next;
 //
@@ -34,7 +34,7 @@ class Queue {
     public void deQueue() {
         // If queue is empty, return null
         if (isEmpty()) {
-            System.out.println("Queue is empty, cannot dequeue");
+            System.out.println("assignment.Queue is empty, cannot dequeue");
             return;
         }
 
@@ -59,11 +59,11 @@ class Queue {
     public void display() {
         Node current = this.front;
         if (current == null) {
-            System.out.println("Queue is empty");
+            System.out.println("assignment.Queue is empty");
             return;
         }
 
-        System.out.print("Queue: ");
+        System.out.print("assignment.Queue: ");
         while (current != null) {
             System.out.print(current.data + " ");
             current = current.next;
@@ -80,15 +80,15 @@ public class QueueLinkedList {
         queue.enQueue(20);
         queue.enQueue(30);
 
-        queue.display(); // Output: Queue: 10 20 30
+        queue.display(); // Output: assignment.Queue: 10 20 30
 
         queue.deQueue();
-        queue.display(); // Output: Queue: 20 30
+        queue.display(); // Output: assignment.Queue: 20 30
 
         queue.deQueue();
-        queue.display(); // Output: Queue: 30
+        queue.display(); // Output: assignment.Queue: 30
 
         queue.deQueue();
-        queue.display(); // Output: Queue is empty
+        queue.display(); // Output: assignment.Queue is empty
     }
 }

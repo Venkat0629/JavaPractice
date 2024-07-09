@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.*;
 
 public class Employee {
@@ -28,7 +30,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" + "id=" + id + ", name='" + name + '\'' + ", age=" + age + '}';
+        return "practice.Employee{" + "id=" + id + ", name='" + name + '\'' + ", age=" + age + '}';
     }
 
     public static Map<Employee, Double> loadData(String mapType) {
