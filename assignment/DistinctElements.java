@@ -10,7 +10,6 @@ public class DistinctElements {
         System.out.println("Distinct Array=> " + Arrays.toString(distinctArray));
     }
 
-    //Eliminating duplicates from array
     private static int[] distinctElements(int[] array) {
         return Arrays.stream(array)
                 .distinct()

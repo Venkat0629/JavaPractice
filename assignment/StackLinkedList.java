@@ -17,14 +17,12 @@ class Stack {
         this.top = null;
     }
 
-    // Method to add an element to the stack
     public void push(int data) {
         Node newNode = new Node(data);
         newNode.next = this.top;
         this.top = newNode;
     }
 
-    // Method to remove and return the top element from stack
     public int pop() {
         if (isEmpty()) {
             System.out.println("assignment.Stack is empty, cannot pop");
@@ -74,11 +72,11 @@ public class StackLinkedList {
         stack.push(20);
         stack.push(30);
 
-        stack.display(); // Output: assignment.Stack: 30 20 10
+        stack.display();
 
-        System.out.println("Popped element: " + stack.pop()); // Output: Popped element: 30
-        System.out.println("Top element: " + stack.peek());   // Output: Top element: 20
+        System.out.println("Popped element: " + stack.pop());
+        System.out.println("Top element: " + stack.peek());
 
-        stack.display(); // Output: assignment.Stack: 20 10
+        stack.display();
     }
 }

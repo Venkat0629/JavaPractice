@@ -16,9 +16,7 @@ public class BubbleSort {
     }
 
     private static void bubbleSort(int[] arr) {
-        //Length of array
         int n = arr.length;
-        //Sorting algorithm
         int i, j;
         for (i = 0; i < n; i++) {
             for (j = 0; j < n - i - 1; j++) {
