@@ -3,7 +3,7 @@ package practice;
 import java.io.IOException;
 
 class Mobile {
-    protected void call() throws Exception {
+    public void call() throws Exception {
         System.out.println("Calling");
     }
 
@@ -27,12 +27,3 @@ class Android extends Mobile {
 
 }
 
-public class Polymorphism {
-    public static void main(String[] args) throws Exception {
-        Mobile mobile = new Android();
-        mobile.call();
-        System.out.println(mobile.call("Venkat"));
-
-    }
-
-}
