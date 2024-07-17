@@ -1,5 +1,9 @@
 package assignment.design.patterns.creational;
 
+/*
+Factory Method Pattern: Defines an interface for creating objects,
+but allows subclasses to decide which class to instantiate.
+ */
 interface Document {
     void create();
 }
@@ -47,3 +51,9 @@ class FactoryMethod {
         report.create();
     }
 }
+
+/*
+Example: Consider an abstract Document class with concrete subclasses like Resume and Report.
+A DocumentFactory interface defines a method createDocument() which each subclass (ResumeFactory, ReportFactory) implements to instantiate the appropriate
+Document subclass based on the client's needs.
+ */

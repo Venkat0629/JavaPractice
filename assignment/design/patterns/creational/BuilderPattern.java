@@ -1,4 +1,7 @@
-package assignment.design.patterns.creational;
+package assignment.design.patterns.creational;/*
+Builder Pattern: Separates the construction of a complex object from its representation, allowing
+the same construction process to create different representations.
+*/
 
 class House {
     public String foundation;
@@ -89,3 +92,8 @@ public class BuilderPattern {
         System.out.println(house);
     }
 }
+/*
+Example: Constructing a Meal object where MealBuilder provides methods like buildDrink(), buildMainCourse(),
+and buildDessert() to create different types of meals (VegetarianMealBuilder, NonVegetarianMealBuilder).
+The Director class orchestrates the building process.
+*/

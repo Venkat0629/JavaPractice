@@ -1,5 +1,8 @@
 package assignment.design.patterns.creational;
 
+/* Singleton Pattern:
+Ensures a class has only one instance and provides a global point of access to it.
+*/
 class Logger {
     private static Logger instance;
 
@@ -24,3 +27,7 @@ class Singleton {
         logger.log("Singleton Pattern example");
     }
 }
+/*
+Example: Logger class in a logging system. Ensures only one instance of Logger exists to control access to shared resources like log files.
+
+ */
