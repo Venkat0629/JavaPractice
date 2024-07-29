@@ -1,0 +1,22 @@
+Threads and Multithreading in Java
+Threads: In Java, a thread refers to the smallest unit of execution within a process. Threads allow concurrent execution of tasks, enabling a program to perform multiple operations simultaneously.
+
+Multithreading: Multithreading is the ability of a CPU or a single core in a multi-core processor to provide multiple threads of execution concurrently. This allows Java programs to perform multiple tasks concurrently, thereby improving performance and responsiveness.
+
+Difference from Single-threaded Programs:
+
+Single-threaded: Executes tasks sequentially, one after another. If one task blocks (e.g., waiting for I/O), the entire program might pause.
+Multithreaded: Can execute multiple tasks simultaneously. This improves responsiveness and overall throughput, especially on multicore processors, by utilizing idle CPU time.
+
+Thread States in Java
+New: A thread is in this state when it has been instantiated but has not yet started via the start() method.
+
+Runnable: The thread is in this state after invoking start(). It can be executing or waiting for its turn to execute on the CPU.
+
+Blocked: A thread transitions to this state when it's waiting for a monitor lock to enter a synchronized block/method.
+
+Waiting: A thread is in this state waiting indefinitely for another thread to perform a particular action, such as notifying it via notify() or notifyAll().
+
+Timed Waiting: Similar to the waiting state, but for a specified interval of time. Threads can enter this state by calling methods like sleep() or join() with a timeout.
+
+Terminated: The thread has completed execution either normally or due to an uncaught exception.

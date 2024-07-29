@@ -1,0 +1,21 @@
+Thread Safety: Thread safety refers to the ability of a piece of code (or a program) to function correctly during simultaneous execution by multiple threads. If a piece of code is thread-safe, it means that it behaves correctly even when multiple threads are executing it concurrently.
+
+Importance of Thread Safety:
+
+Prevents Data Corruption: In multithreaded programs, multiple threads may access and modify shared resources concurrently. Without proper synchronization, these operations can lead to data corruption or inconsistent state.
+Ensures Predictable Behavior: Thread safety ensures that the outcome of operations remains consistent and predictable regardless of the interleaving of thread execution.
+Maintains Application Integrity: Ensuring thread safety is crucial for the overall integrity and reliability of the application, especially in critical systems where correctness is paramount.
+Synchronization in Java
+Synchronized Keyword: In Java, the synchronized keyword is used to create synchronized methods and blocks to achieve thread safety. When a method or block is declared as synchronized, Java ensures that at most one thread can execute that synchronized code segment at a time.
+
+Using synchronized for Thread Safety:
+
+Synchronized Methods: When a method is declared as synchronized, only one thread can execute that method on the same instance of the class at any given time. Example:
+
+//Synchronized method
+public synchronized void synchronizedMethod() {}
+
+Synchronized Blocks: Alternatively, you can use synchronized blocks to synchronize on specific objects. This gives finer control over which part of the code is synchronized:
+
+//Synchronized block
+synchronized (object) {}

@@ -1,4 +1,4 @@
-package assessment;
+package assessment.java;
 
 public class BinarySearchArray {
     public static void main(String[] args) {

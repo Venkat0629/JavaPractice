@@ -1,4 +1,4 @@
-package assessment;
+package assessment.java;
 
 class Node {
     int data;

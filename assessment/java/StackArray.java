@@ -1,4 +1,4 @@
-package assessment;
+package assessment.java;
 
 public class StackArray {
     private int maxSize;

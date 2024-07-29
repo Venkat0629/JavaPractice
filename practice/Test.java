@@ -1,6 +1,7 @@
 package practice;
 
 public class Test {
+
     public static void main(String[] args) {
         int num = 1323444484;
         int ans = sum(num);
